@@ -1,0 +1,112 @@
+/* Global Styling */
+        body {
+            background-color: #f4f7fc;
+            font-family: Arial, sans-serif;
+            padding-top: 70px; /* Offset for fixed navbar */
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background: linear-gradient(to right, #0052D4, #4364F7, #6FB1FC);
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffc107;
+        }
+
+        /* Header Section */
+        .hero {
+            background: url('campus-banner.jpg') center/cover no-repeat;
+            text-align: center;
+            color: white;
+            padding: 60px 20px;
+            background-size: cover;
+            background-blend-mode: overlay;
+            background-color: rgba(0, 82, 212, 0.6);
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            font-style: italic;
+        }
+
+        /* About Us Section */
+        .about {
+            padding: 40px 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 900px;
+        }
+
+        .about h2 {
+            color: #0040a0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Vision & Mission Boxes */
+        .mission-vision {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+        }
+
+        .box {
+            flex: 1;
+            max-width: 400px;
+            background: white;
+            padding: 25px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .box h2 {
+            color: #0052D4;
+            margin-bottom: 15px;
+        }
+
+        /* Why Choose Us */
+        .why-choose {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .why-choose ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .why-choose li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: #0040a0;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }

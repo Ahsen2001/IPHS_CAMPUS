@@ -1,0 +1,140 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f8f9fd;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #023d7d;
+    color: white;
+    padding: 20px;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+    z-index: 1000;
+}
+.sidebar a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+.sidebar a:hover {
+    background-color: white;
+    color: #023d7d;
+    transform: scale(1.05);
+}
+
+/* Logo */
+.logo {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Main Content */
+.content {
+    margin-left: 280px;
+    padding: 30px;
+    transition: margin 0.3s ease;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+/* Cards */
+.card {
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* Table */
+.table thead {
+    background: #023d7d;
+    color: white;
+}
+.table tbody tr:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* Buttons */
+.btn {
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsive Sidebar */
+@media (max-width: 768px) {
+    .sidebar {
+        left: -260px;
+        position: absolute;
+    }
+    .sidebar.active {
+        left: 0;
+    }
+    .content {
+        margin-left: 0 !important;
+    }
+    body.sidebar-open {
+        overflow: hidden;
+    }
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+.dark-mode .table thead {
+    background: #333;
+    color: #fff;
+}
+.dark-mode .sidebar {
+    background-color: #0d1117;
+    color: white;
+}
+.dark-mode .sidebar a {
+    color: white;
+}
+.dark-mode .sidebar a:hover {
+    background-color: #fff;
+    color: #0d1117;
+}
+
+/* Scrollbar Styling (optional) */
+.sidebar::-webkit-scrollbar,
+.content::-webkit-scrollbar {
+    width: 8px;
+}
+.sidebar::-webkit-scrollbar-thumb,
+.content::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
